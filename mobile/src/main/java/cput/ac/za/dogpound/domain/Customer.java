@@ -1,25 +1,29 @@
 package cput.ac.za.dogpound.domain;
 
 import java.io.Serializable;
-
 public class Customer implements Serializable {
-    private Long id;
+    private long id;
     private String name;
     private String surname;
-    private String age;
+    private String phoneNumber;
 
+
+    public Customer()
+    {
+
+    }
 
     private Customer(Builder build)
     {
         this.name = build.name;
         this.surname = build.surname;
-        this.age = build.age;
+        this.phoneNumber = build.phoneNumber;
         this.id = build.id;
 
 
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
@@ -31,17 +35,17 @@ public class Customer implements Serializable {
         return name;
     }
 
-    public String getAge() {
-        return age;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
     public static class Builder{
-        private Long id;
+        private long id;
         private String name;
         private String surname;
-        private String age;
+        private String phoneNumber;
 
-        public Builder id(Long id){
+        public Builder id(long id){
             this.id = id;
             return this;
         }
@@ -56,15 +60,15 @@ public class Customer implements Serializable {
             return this;
         }
 
-        public Builder age(String age){
-            this.age = age;
+        public Builder phoneNumber(String phoneNumber){
+            this.phoneNumber = phoneNumber;
             return this;
         }
 
         public Builder customer(Customer cust) {
             name = cust.getName();
             surname = cust.getSurname();
-            age = cust.getAge();
+            phoneNumber = cust.getPhoneNumber();
             id = cust.getId();
             return this;
         }
@@ -72,7 +76,7 @@ public class Customer implements Serializable {
         public Builder copy(Customer value){
             name = value.name;
             surname = value.surname;
-            age = value.age;
+            phoneNumber = value.phoneNumber;
             id = value.id;
             return this;
         }
@@ -83,10 +87,13 @@ public class Customer implements Serializable {
     }
 
 
+    /*
     @Override
     public String toString()
     {
         return String.format("Id : %d\nName :%s\nSurname :%s\nAge :%s",id,name,surname,age);
 
     }
+
+    */
 }

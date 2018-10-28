@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Add New Adoption"
+android:layout_marginLeft="60dp"
+android:layout_marginTop="20dp"
+
+/>
+<RelativeLayout
+android:layout_width="358dp"
+android:layout_height="wrap_content">
+
+<TextView
+android:id="@+id/t1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Dog Name"
+android:layout_marginLeft="20dp"
+android:layout_marginTop="40dp"/>
+
+<EditText
+android:id="@+id/accid"
+android:layout_height="wrap_content"
+android:layout_width="fill_parent"
+android:layout_marginTop="40dp"
+android:layout_toRightOf="@id/t1"
+android:layout_marginLeft="30dp"/>
+</RelativeLayout>
+
+<RelativeLayout
+android:layout_width="362dp"
+android:layout_height="wrap_content">
+
+<TextView
+android:id="@+id/t2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Customer Name"
+android:layout_marginLeft="20dp"
+android:layout_marginTop="40dp"/>
+
+<EditText
+android:id="@+id/acctype"
+android:layout_height="wrap_content"
+android:layout_width="fill_parent"
+android:layout_marginTop="40dp"
+android:layout_toRightOf="@id/t2"
+android:layout_marginLeft="10dp"
+android:layout_alignParentRight="true"
+android:layout_alignParentEnd="true" />
+</RelativeLayout>
+
+<RelativeLayout
+android:layout_width="366dp"
+android:layout_height="wrap_content">
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Customer Surname"
+android:layout_marginLeft="20dp"
+android:layout_marginTop="40dp"
+android:id="@+id/textView" />
+
+<EditText
+android:id="@+id/phonenumber"
+android:layout_height="wrap_content"
+android:layout_width="fill_parent"
+android:layout_marginTop="40dp"
+android:layout_alignParentRight="true"
+android:layout_alignParentEnd="true"
+android:layout_toRightOf="@+id/textView"
+android:layout_toEndOf="@+id/textView" />
+</RelativeLayout>
+
+<RelativeLayout
+android:layout_width="365dp"
+android:layout_height="wrap_content">
+
+<TextView
+android:id="@+id/t3"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Phone Number"
+android:layout_marginLeft="20dp"
+android:layout_marginTop="40dp"/>
+
+<EditText
+android:id="@+id/accbal"
+android:layout_height="wrap_content"
+android:layout_width="fill_parent"
+android:layout_marginTop="40dp"
+android:layout_toRightOf="@+id/t3"
+android:layout_toEndOf="@+id/t3" />
+</RelativeLayout>
+
+<Button
+android:id="@+id/bCreate"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:layout_marginTop="20dp"
+android:layout_marginLeft="259dp"
+android:text="ADD" />
+</LinearLayout>

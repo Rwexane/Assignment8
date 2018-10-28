@@ -6,7 +6,6 @@ import junit.framework.Assert;
 
 import java.util.Set;
 
-import cput.ac.za.dogpound.domain.Treatment;
 import cput.ac.za.dogpound.repository.treatment.Impl.TreatmentRepositoryImpl;
 import cput.ac.za.dogpound.repository.treatment.TreatmentRepository;
 
